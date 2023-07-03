@@ -1,0 +1,63 @@
+##### -A aggressive scan
+
+nmap -A 172.25.10.82
+
+##### -PN Port scan 
+
+nmap -PN 172.25.10.82
+
+##### -sP mac scan
+
+nmap -sP 172.25.10.82
+
+##### -PE ICMP ping
+
+nmap -PS 172.25.10.82
+
+##### -PR ARP ping 
+
+nmap -PR 172.25.10.82
+
+##### Traceroute 
+
+nmap --traceroute 172.25.10.82 
+
+##### Reverse
+
+nmap -R  172.25.10.82
+
+
+##### UDP scan 
+
+nmap -sU 172.25.10.143
+
+##### UDP TCP specific port scan 
+
+nmap -sU -sT -p U:631,T:135 172.25.10.82
+
+##### Version scan
+
+nmap -sV 172.25.10.143
+
+##### OS scan 
+
+nmap -O 172.25.10.82
+
+##### Version scan 
+
+nmap -sR 172.25.10.82
+
+##### T4 - agressive, T3 - normal, T5 -fast
+
+nmap -T4 172.25.10.82
+
+##### reason
+
+nmap --reason 172.25.10.82
+
+##### use fix ethernet  
+
+nmap -e enp0s3 172.25.10.82
+
+
+
